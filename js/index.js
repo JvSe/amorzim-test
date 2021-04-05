@@ -1,4 +1,4 @@
-var linkWhats = "https://api.whatsapp.com/send?phone=5563992480902&text=";
+var linkWhats = "https://api.whatsapp.com/send?phone=556392480908&text=";
 
 function msg(tema) {
     var textUppercase = tema.toUpperCase();
