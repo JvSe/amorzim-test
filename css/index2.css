@@ -1,0 +1,288 @@
+@import url('animations.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&family=Marck+Script&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: 0.5s
+}
+
+:root {
+    --pinkshadow:#F600FF;
+    --pink:#FF00C3;
+}
+
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    height: 100vh;
+    background-color: black ;
+
+    font-family: 'Francois One', sans-serif;
+    font-size: 2rem;
+    color: white;
+}
+
+main {
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
+    overflow: hidden;
+}
+
+.border-pink {
+    border-style: solid;
+    border-color: var(--pink);
+    border-width: 5px;
+
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(246,0,255,1);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(246,0,255,1);
+    box-shadow: 0px 0px 20px 0px rgba(246,0,255,1);
+}
+
+.container-img {
+    display: flex;
+    justify-content:center;
+    padding-top: 20px;
+}
+
+.container-img img {
+    border-radius:50%;
+    width:40%;
+}
+
+.nome-titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+}
+
+.nome-titulo p:first-child {
+    font-size: 7rem;
+}
+
+.nome-titulo p:last-child {
+    font-family: 'Marck Script', cursive;
+    color: var(--pink);
+    font-size: 5.5rem;
+    margin-top: -4.5rem;
+
+    border: none;
+
+    -webkit-text-shadow: 0px 0px 20px rgb(0, 0, 0);
+    -moz-text-shadow: 0px 0px 20px rgb(0, 0, 0);
+    text-shadow: 0px -2px 4px rgb(0, 0, 0);
+}
+
+.about {
+    border: solid 5px;
+    border-left: none;
+    border-right: none;
+    padding: 5px 20px;
+}
+
+.about p {
+    font-size: 3.5rem;
+}
+
+.about:hover {
+    color: var(--pink);
+    cursor: pointer;
+    transition:0.3s;
+}
+.como-posso-ajudar p {
+    font-size: 5.5rem;
+    font-family: 'Marck Script', cursive;
+    color: var(--pink);
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 38%;
+}
+
+.buttons button {
+    margin: 10px;
+    font-family: 'Francois One', sans-serif;
+    font-size: 2.4rem;
+
+    width: 100%;
+    height: 60px;
+    border-radius: 50px;
+    color: var(--pink);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    color: white;
+    background-color: var(--pink);
+    transition:0.5s;
+}
+
+@media screen and (max-width: 1024px) {
+    .container-img img {
+        width: 30%;
+    }
+
+    .nome-titulo p:first-child{
+        font-size: 5.5rem;
+    }
+    
+    .nome-titulo p:last-child {
+        font-size: 3.6rem;
+        margin-top: -3.3rem;
+    }
+
+    .about {
+        padding: 5px 5px;
+        border: solid 3px;
+        border-left: none;
+        border-right: none;
+    }
+
+    .about p {
+        font-size: 2.5rem;
+    }
+
+    .como-posso-ajudar p {
+        font-size: 2.7rem;
+    }
+
+    .buttons {
+        width:35%
+    }
+
+    .buttons button {
+        font-size: 1.9rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container-img img {
+        width: 30%;
+    }
+
+    .nome-titulo p:first-child{
+        font-size: 5.5rem;
+    }
+    
+    .nome-titulo p:last-child {
+        font-size: 3.6rem;
+        margin-top: -3.3rem;
+    }
+
+    .about {
+        padding: 5px 5px;
+        border: solid 3px;
+        border-left: none;
+        border-right: none;
+    }
+
+    .about p {
+        font-size: 2.5rem;
+    }
+
+    .como-posso-ajudar p {
+        font-size: 2.7rem;
+    }
+
+    .buttons {
+        width:40%
+    }
+
+    .buttons button {
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .container-img img {
+        width: 55%;
+    }
+
+    .nome-titulo p:first-child{
+        font-size: 5.5rem;
+    }
+    
+    .nome-titulo p:last-child {
+        font-size: 3.6rem;
+        margin-top: -3.3rem;
+    }
+
+    .about {
+        padding: 5px 5px;
+        border: solid 3px;
+        border-left: none;
+        border-right: none;
+    }
+
+    .about p {
+        font-size: 2.5rem;
+    }
+
+    .como-posso-ajudar p {
+        font-size: 2.7rem;
+    }
+
+    .buttons {
+        width:70%
+    }
+
+    .buttons button {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .container-img img {
+        width: 50%;
+    }
+
+    .nome-titulo p:first-child{
+        font-size: 4.5rem;
+    }
+    
+    .nome-titulo p:last-child {
+        font-size: 3.3rem;
+        margin-top: -3.3rem;
+    }
+
+    .about {
+        padding: 5px 5px;
+        border: solid 3px;
+        border-left: none;
+        border-right: none;
+    }
+
+    .about p {
+        font-size: 2.5rem;
+    }
+
+    .como-posso-ajudar p {
+        font-size: 2.7rem;
+    }
+
+    .buttons {
+        width:80%
+    }
+
+    .buttons button {
+        font-size: 1.5rem;
+    }
+}
